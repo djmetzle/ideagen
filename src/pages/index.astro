@@ -1,7 +1,7 @@
 ---
 import '../styles/pico.scss'
 
-import IdeaGen from './IdeaGen.astro'
+import IdeaGen from '../components/IdeaGen.vue'
 
 ---
 
@@ -20,7 +20,7 @@ import IdeaGen from './IdeaGen.astro'
 				<hgroup>
 					<h1>Photo Idea Generator</h1>
 				</hgroup>
-				<IdeaGen />
+				<IdeaGen client:only="vue" />
 			</header>
 		</main>
 	</body>
