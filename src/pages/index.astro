@@ -1,6 +1,8 @@
 ---
 import '../styles/pico.scss'
 
+import IdeaGen from './IdeaGen.astro'
+
 ---
 
 <html lang="en">
@@ -13,6 +15,13 @@ import '../styles/pico.scss'
 		<title>Photo Idea Generator</title>
 	</head>
 	<body>
-		<h1>Photo Idea Generator</h1>
+		<main class="container">
+			<header>
+				<hgroup>
+					<h1>Photo Idea Generator</h1>
+				</hgroup>
+				<IdeaGen />
+			</header>
+		</main>
 	</body>
 </html>
