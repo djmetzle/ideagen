@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@picocss/pico": "github:picocss/pico",
     "astro": "^5.15.3"
   }
 }

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@picocss/pico':
+        specifier: github:picocss/pico
+        version: https://codeload.github.com/picocss/pico/tar.gz/1039a4788d6abc368d5485ae6bac84a8f0e3096f
       astro:
         specifier: ^5.15.3
         version: 5.15.3(@types/node@24.10.0)(rollup@4.52.5)(typescript@5.9.3)
@@ -342,6 +345,10 @@ packages:
 
   '@oslojs/encoding@1.1.0':
     resolution: {integrity: sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==}
+
+  '@picocss/pico@https://codeload.github.com/picocss/pico/tar.gz/1039a4788d6abc368d5485ae6bac84a8f0e3096f':
+    resolution: {tarball: https://codeload.github.com/picocss/pico/tar.gz/1039a4788d6abc368d5485ae6bac84a8f0e3096f}
+    version: 2.1.1
 
   '@rollup/pluginutils@5.3.0':
     resolution: {integrity: sha512-5EdhGZtnu3V88ces7s53hhfK5KSASnJZv8Lulpc04cWO3REESroJXg73DFsOmgbU2BhwV0E20bu2IDZb3VKW4Q==}
@@ -1680,6 +1687,8 @@ snapshots:
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
   '@oslojs/encoding@1.1.0': {}
+
+  '@picocss/pico@https://codeload.github.com/picocss/pico/tar.gz/1039a4788d6abc368d5485ae6bac84a8f0e3096f': {}
 
   '@rollup/pluginutils@5.3.0(rollup@4.52.5)':
     dependencies:
