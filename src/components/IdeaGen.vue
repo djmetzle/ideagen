@@ -6,8 +6,6 @@ import Adjectives from '../data/adjective.json'
 import Environments from '../data/environment.json'
 import Styles from '../data/style.json'
 
-console.log(Subjects)
-
 const THEMES = ref([
   { text: 'Things', value: 'things' },
   { text: 'People', value: 'people' },
