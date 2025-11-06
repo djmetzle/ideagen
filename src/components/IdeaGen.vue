@@ -1,6 +1,12 @@
 <script setup>
 import { ref } from 'vue'
 
+import Subjects from '../data/subject.json'
+import Adjectives from '../data/adjective.json'
+import Environments from '../data/environment.json'
+import Styles from '../data/style.json'
+
+console.log(Subjects)
 
 const THEMES = ref([
   { text: 'Things', value: 'things' },
@@ -16,20 +22,28 @@ const subject = ref('thing');
 const environment = ref('at');
 const style = ref('style');
 
+function randomFrom(list) {
+  return list[Math.floor(Math.random()*list.length)];
+}
+
 function regenAdjective(_event) {
-  adjective.value = 'refresh';
+  const themeAdjectives = Adjectives[theme.value];
+  adjective.value = randomFrom(themeAdjectives); 
 }
 
 function regenSubject(_event) {
-  subject.value = 'refresh';
+  const themeSubjects = Subjects[theme.value] 
+  subject.value = randomFrom(themeSubjects)
 }
 
 function regenEnvironment(_event) {
-  environment.value = 'refresh';
+  const themeEnvironment = Environments[theme.value] 
+  environment.value = randomFrom(themeEnvironment);
 }
 
 function regenStyle(_event) {
-  style.value = 'refresh';
+  const themeStyles = Styles[theme.value]
+  style.value = randomFrom(themeStyles);
 }
 
 function regenAll(event) {
