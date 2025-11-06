@@ -11,6 +11,11 @@ const THEMES = ref([
 
 const theme = ref('things');
 
+const adjective = ref('some');
+const subject = ref('thing');
+const environment = ref('at');
+const style = ref('style');
+
 </script>
 
 <template>
@@ -23,4 +28,24 @@ const theme = ref('things');
 
   <hr/>
 
+  <h5>Try:</h5>
+  <div class="generated">
+    A
+    <span> {{adjective}} </span>
+    <span>{{subject}}</span>
+    at
+    <span>{{environment}}</span>
+    in a
+    <span>{{style}}</span>
+    style
+  </div>
+
 </template>
+
+<style>
+span {
+  margin: 0.5rem;
+  background: #444;
+  padding: 0.5rem;
+}
+</style>
