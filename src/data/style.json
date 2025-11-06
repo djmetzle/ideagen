@@ -1,1 +1,19 @@
-[]
+{
+  "things": [
+    "realistic"
+  ],
+  "people": [
+    "portrait"
+  ],
+  "places": [
+    "open",
+    "public"
+  ],
+  "abstract": [
+    "intriguing",
+    "colorful",
+    "spacey",
+    "chaotic",
+    "abstract"
+  ]
+}

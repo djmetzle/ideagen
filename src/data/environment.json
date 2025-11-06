@@ -1,1 +1,19 @@
-[]
+{
+  "things": [
+    "on a shelf",
+    "a place"
+  ],
+  "people": [
+    "in a crowd",
+    "at home"
+  ],
+  "places": [
+    "in a city",
+    "in the country",
+    "your area"
+  ],
+  "abstract": [
+    "under a microscope",
+    "anywhere"
+  ]
+}

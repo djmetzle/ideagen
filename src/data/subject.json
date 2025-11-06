@@ -1,1 +1,30 @@
-[]
+{
+  "things": [
+    "cat",
+    "dog",
+    "flower",
+    "coffee cup",
+    "computer",
+    "thing"
+  ],
+  "people": [
+    "man",
+    "woman",
+    "child",
+    "grandparent",
+    "person"
+  ],
+  "places": [
+    "church",
+    "school",
+    "library",
+    "place"
+  ],
+  "abstract": [
+    "state of being",
+    "emotion",
+    "personality",
+    "character",
+    "idea"
+  ]
+}
