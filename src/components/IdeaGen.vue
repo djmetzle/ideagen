@@ -17,23 +17,26 @@ const environment = ref('at');
 const style = ref('style');
 
 function regenAdjective(_event) {
-  console.log(_event);
+  adjective.value = 'refresh';
 }
 
 function regenSubject(_event) {
-  console.log(_event);
+  subject.value = 'refresh';
 }
 
 function regenEnvironment(_event) {
-  console.log(_event);
+  environment.value = 'refresh';
 }
 
 function regenStyle(_event) {
-  console.log(_event);
+  style.value = 'refresh';
 }
 
-function regenAll(_event) {
-  console.log(_event);
+function regenAll(event) {
+  regenAdjective(event);
+  regenSubject(event);
+  regenEnvironment(event);
+  regenStyle(event);
 }
 
 </script>
