@@ -16,6 +16,26 @@ const subject = ref('thing');
 const environment = ref('at');
 const style = ref('style');
 
+function regenAdjective(_event) {
+  console.log(_event);
+}
+
+function regenSubject(_event) {
+  console.log(_event);
+}
+
+function regenEnvironment(_event) {
+  console.log(_event);
+}
+
+function regenStyle(_event) {
+  console.log(_event);
+}
+
+function regenAll(_event) {
+  console.log(_event);
+}
+
 </script>
 
 <template>
@@ -29,7 +49,7 @@ const style = ref('style');
   <hr/>
 
   <h5>Try:</h5>
-  <div class="generated">
+  <article class="generated">
     A
     <span> {{adjective}} </span>
     <span>{{subject}}</span>
@@ -38,8 +58,18 @@ const style = ref('style');
     in a
     <span>{{style}}</span>
     style
-  </div>
+  </article>
 
+  <article class="buttons">
+    <button @click="regenAdjective">🔄</button>
+    <button @click="regenSubject">🔄</button>
+    <button @click="regenEnvironment">🔄</button>
+    <button @click="regenStyle">🔄</button>
+  </article>
+
+  <article>
+    <button @click="regenAll">🔄 Regenerate All</button>
+  </article>
 </template>
 
 <style>
@@ -47,5 +77,9 @@ span {
   margin: 0.5rem;
   background: #444;
   padding: 0.5rem;
+}
+
+.buttons > button {
+  margin: 0.5rem;
 }
 </style>
