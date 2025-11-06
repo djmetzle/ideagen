@@ -17,10 +17,10 @@ const THEMES = ref([
 
 const theme = ref('things');
 
-const adjective = ref('some');
-const subject = ref('thing');
-const environment = ref('at');
-const style = ref('style');
+const adjective = ref('interesting');
+const subject = ref('subject');
+const environment = ref('a location');
+const style = ref('photo');
 
 function randomFrom(list) {
   return list[Math.floor(Math.random()*list.length)];
@@ -68,20 +68,13 @@ function regenAll(event) {
   <h5>Try:</h5>
   <article class="generated">
     A
-    <span> {{adjective}} </span>
-    <span>{{subject}}</span>
+    <button @click="regenAdjective">{{adjective}}</button>
+    <button @click="regenSubject">{{subject}}</button>
     at
-    <span>{{environment}}</span>
+    <button @click="regenEnvironment">{{environment}}</button>
     in a
-    <span>{{style}}</span>
+    <button @click="regenStyle">{{style}}</button>
     style
-  </article>
-
-  <article class="buttons">
-    <button @click="regenAdjective">🔄</button>
-    <button @click="regenSubject">🔄</button>
-    <button @click="regenEnvironment">🔄</button>
-    <button @click="regenStyle">🔄</button>
   </article>
 
   <article>
@@ -92,11 +85,12 @@ function regenAll(event) {
 <style>
 span {
   margin: 0.5rem;
-  background: #444;
+  background: #228;
   padding: 0.5rem;
 }
 
-.buttons > button {
+button {
   margin: 0.5rem;
+  background: #228;
 }
 </style>
