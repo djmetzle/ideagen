@@ -17,7 +17,7 @@ const theme = ref('things');
 
 const adjective = ref('interesting');
 const subject = ref('subject');
-const environment = ref('a location');
+const environment = ref('in a location');
 const style = ref('photo');
 
 function randomFrom(list) {
@@ -54,21 +54,17 @@ function regenAll(event) {
 </script>
 
 <template>
-  <h3>Select a Theme:</h3>
+  <h3>Theme:</h3>
   <select v-model="theme">
     <option v-for="themeOpt in THEMES" :value="themeOpt.value">
       {{ themeOpt.text }}
     </option>
   </select>
 
-  <hr/>
-
-  <h5>Try:</h5>
   <article class="generated">
     A
     <button @click="regenAdjective">{{adjective}}</button>
     <button @click="regenSubject">{{subject}}</button>
-    at
     <button @click="regenEnvironment">{{environment}}</button>
     in a
     <button @click="regenStyle">{{style}}</button>
