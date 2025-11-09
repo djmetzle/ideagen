@@ -19,6 +19,8 @@
     "fast",
     "slow",
     "painted",
+    "inside out",
+    "upside down",
     "abstract",
     "concrete"
   ],
@@ -109,6 +111,9 @@
     "intrusive",
     "undeniable",
     "explicit",
+    "inside out",
+    "upside down",
+    "reflected",
     "abstract"
   ]
 }
