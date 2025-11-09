@@ -40,8 +40,7 @@ function regenEnvironment(_event) {
 }
 
 function regenStyle(_event) {
-  const themeStyles = Styles[theme.value]
-  style.value = randomFrom(themeStyles);
+  style.value = randomFrom(Styles);
 }
 
 function regenAll(event) {

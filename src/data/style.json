@@ -1,19 +1,39 @@
-{
-  "things": [
-    "realistic"
-  ],
-  "people": [
-    "portrait"
-  ],
-  "places": [
-    "open",
-    "public"
-  ],
-  "abstract": [
-    "intriguing",
-    "colorful",
-    "spacey",
-    "chaotic",
-    "abstract"
-  ]
-}
+[
+  "realistic",
+  "portrait",
+  "watercolor",
+  "impressionist",
+  "oil painting",
+  "pastel",
+  "high key",
+  "low key",
+  "black and white",
+  "high contrast",
+  "saturated",
+  "lofi",
+  "muted",
+  "open",
+  "public",
+  "intriguing",
+  "colorful",
+  "spacey",
+  "chaotic",
+  "surreal",
+  "boring",
+  "plain",
+  "isolated",
+  "warm",
+  "inviting",
+  "friendly",
+  "cozy",
+  "fun",
+  "peaceful",
+  "anxious",
+  "aggressive",
+  "angry",
+  "messy",
+  "fresh perspective",
+  "scifi",
+  "film-like",
+  "abstract"
+]
