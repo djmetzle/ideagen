@@ -1,0 +1,44 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+#      - name: AWS login
+#        uses: aws-actions/configure-aws-credentials@v4
+#        with:
+#          aws-region: us-west-1
+#          role-to-assume: arn:aws:iam::177613294657:role/blog-djmetzle-io-deploy
+#  
+#      - name: Update site
+#        run: aws --region us-west-1 s3 sync --delete ./dist s3://djmetzle-io-blog/
+#
+#      - name: Invalidate Cloudfront
+#        run: aws cloudfront create-invalidation --distribution-id E2TW6CHKSY6T7K --paths "/*"
