@@ -31,14 +31,14 @@ jobs:
       - name: Build
         run: npm run build
 
-#      - name: AWS login
-#        uses: aws-actions/configure-aws-credentials@v4
-#        with:
-#          aws-region: us-west-1
-#          role-to-assume: arn:aws:iam::177613294657:role/blog-djmetzle-io-deploy
-#  
-#      - name: Update site
-#        run: aws --region us-west-1 s3 sync --delete ./dist s3://djmetzle-io-blog/
-#
-#      - name: Invalidate Cloudfront
-#        run: aws cloudfront create-invalidation --distribution-id E2TW6CHKSY6T7K --paths "/*"
+      - name: AWS login
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: us-west-1
+          role-to-assume: arn:aws:iam::177613294657:role/ideagenDeployRole
+  
+      - name: Update site
+        run: aws --region us-west-1 s3 sync --delete ./dist s3://djmetzle-photo-ideagen/
+
+      - name: Invalidate Cloudfront
+        run: aws cloudfront create-invalidation --distribution-id E1N667M2O9N9NW --paths "/*"
