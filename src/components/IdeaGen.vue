@@ -62,7 +62,6 @@ function regenAll(event) {
   </select>
 
   <article class="generated">
-    A
     <button @click="regenAdjective">{{adjective}}</button>
     <button @click="regenSubject">{{subject}}</button>
     <button @click="regenEnvironment">{{environment}}</button>
