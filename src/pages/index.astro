@@ -3,6 +3,7 @@ import '../styles/pico.scss'
 
 import IdeaGen from '../components/IdeaGen.vue'
 
+const today = new Date();
 ---
 
 <html lang="en">
@@ -18,14 +19,19 @@ import IdeaGen from '../components/IdeaGen.vue'
 		<title>Photo Idea Generator</title>
 	</head>
 	<body>
+		<header class="container">
+			<hgroup>
+				<h1>📸 Photo Idea Generator</h1>
+			</hgroup>
+			<hr/>
+		</header>
+
 		<main class="container">
-			<header>
-				<hgroup>
-					<h1>📸 Photo Idea Generator</h1>
-				</hgroup>
-				<hr/>
-				<IdeaGen client:only="vue" />
-			</header>
+			<IdeaGen client:only="vue" />
 		</main>
+
+		<footer class="container">
+			<p>&copy; {today.getFullYear()} <a href="https://www.djmetzle.io">djmetzle</a> All rights reserved.</p>
+		</footer>
 	</body>
 </html>
